@@ -45,6 +45,10 @@
   padding-bottom: 5rem;
 }
 
+.grid-work {
+  padding-bottom: 8.5rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -68,4 +72,19 @@
   top: -4rem;
   left: 0;
   transform: rotate(3deg);
+}
+
+.gallery-img {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+  transform: translate(-3%, 3%) scale(1.2) rotate(3deg);
 }
