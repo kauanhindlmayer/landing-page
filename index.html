@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Landing Page</title>
 </head>
-<body class="main-bg">
+<body>
   <aside class="menu white-bg">
     <div class="main-content menu-content">
       <h1><a href="#home">LOGO</a></h1>
@@ -212,21 +212,39 @@
         <img src="./assets/images/contact.svg" alt="From right to left you can see a landline phone, a cell phone and a woman holding a letter.">
       </div>
       <div class="contact-form">
-        <fieldset>
+        <fieldset class="form-grid">
           <legend>Contact us</legend>
 
           <div class="form-group">
             <label for="first-name">First name</label>
-            <input type="text" name="first-name" id="first-name">
+            <input type="text" name="first-name" id="first-name" placeholder="Your name">
           </div>
 
           <div class="form-group">
             <label for="last-name">Last name</label>
-            <input type="text" name="last-name" id="last-name">
+            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="Your e-mail">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit">Send message</button>
           </div>
         </fieldset>
       </div>
     </div>
   </section>
+
+  <footer id="footer" class="footer white-bg">
+    <p><a rel="nofollow" target="_blank" href="#">Feito com <span class="heart">♥</span> por Kauan Hindlmayer</a></p>
+  </footer>
 </body>
 </html>
